@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/statusBluetoothTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/bluetoothIv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:id="@+id/onBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Turn On"/>
+
+            <Button
+                android:id="@+id/offBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Turn Off"/>
+
+            <Button
+                android:id="@+id/discoverableBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Discoverable"/>
+
+            <Button
+                android:id="@+id/pairedBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Get Paired Devices"/>
+
+            <TextView
+                android:id="@+id/pairedTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
