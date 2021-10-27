@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                     mPairedTv.setText("Paired Devices");
                     Set<BluetoothDevice> devices = mBlueAdapter.getBondedDevices();
                     for (BluetoothDevice device : devices) {
-                        mPairedTv.append("\nDevice : " + device.getName());
+                        mPairedTv.append("\nDevice : " + device.getAddress());
                         /////////////////////////////////////////////////
                         try{
                             Method m = device.getClass().getMethod("isConnected", (Class[]) null);
